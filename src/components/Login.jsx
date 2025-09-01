@@ -44,7 +44,7 @@ const Login = () => {
               <legend className="fieldset-legend">Email ID</legend>
               <input
                 type="text"
-                className="input border-pink-700"
+                className="input text-base border-pink-700 focus:border-pink-400! focus:ring-pink-400! focus:ring-2! focus:[--input-color:#f472b6]! caret-pink-500 text-pink-500"
                 placeholder="abcd@gmail.com"
                 value={emailId}
                 onChange={(e) => setEmail(e.target.value)}
@@ -55,14 +55,14 @@ const Login = () => {
               <legend className="fieldset-legend">Password</legend>
               <input
                 type="password"
-                className="input border-pink-700"
+                className="input text-base border-pink-700 focus:border-pink-400! focus:ring-pink-400! focus:ring-2! focus:[--input-color:#f472b6]! caret-pink-500 text-pink-500"
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </fieldset>
           </div>
-          <p className="text-red-500">{error}</p>
+          <p className="text-red-500 text-base">{error}</p>
           <div className="justify-center card-actions">
             <button
               className="btn  btn-outline  btn-secondary"

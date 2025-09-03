@@ -7,7 +7,7 @@ import { addConnections } from "../utils/connectionSlice";
 const Connections = () => {
   const dispatch = useDispatch();
   const connection = useSelector((store) => store.connections);
-  console.log(connection);
+  //   console.log(connection);
 
   const fetchConnections = async () => {
     try {
@@ -41,7 +41,7 @@ const Connections = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {connection.map((user) => (
             <div
-              key={user.id}
+              key={user._id}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative">
@@ -100,6 +100,14 @@ const Connections = () => {
                     </div>
                   </div>
 
+                  <button className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors duration-300 text-sm font-medium">
+                    View Profile
+                  </button>
+                  </div> */}
+                {/* <div className="text-center ">
+                  <button className="px-4 py-2 mx-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors duration-300 text-sm font-medium">
+                    View Profile
+                  </button>
                   <button className="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors duration-300 text-sm font-medium">
                     View Profile
                   </button>
